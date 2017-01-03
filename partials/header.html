@@ -1,16 +1,32 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
 <header class="c-header">
-  <img class="c-header__logo" src="/assets/logo.png"/>
+  
+  <!--<div class="c-logo">
+    <img class="c-logo__img" src="/assets/header-2.png"/>
+  </div>-->
+
+  <div class="c-logo">
+    <h1 class="c-logo__h1">
+      Megnanimously.
+    </h1>
+
+    <p class="c-logo__p">A (mostly) travel blog,
+    <br>The life of an American expat in Berlin.</p>
+
+    </div>
+
   <nav class="c-nav">
     <ul class="c-nav__list">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/authors.html">Authors</a></li>
-      <li><a href="/images.html">Images</a></li>
-      <li><a href="/entries.html">Entries</a></li>
-      <li><a href="/filtered.html">Filtered Entries</a></li>
+      <li><a href="/places.html">Places</a></li>
+      <li><a href="/filtered.html">Berlin</a></li>
+      <li><a href="/potpourri.html">Potpourri</a></li>
     </ul>
   </nav>
 
-  <div class="c-featured">
-    New: {{ common.featured_author.items.0.fields.name }}
-  </div>
 </header>
+</html>

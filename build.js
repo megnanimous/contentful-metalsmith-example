@@ -6,7 +6,7 @@ const sass = require('metalsmith-sass')
 const markdown = require('metalsmith-markdown')
 const dataMarkdown = require('metalsmith-data-markdown')
 const contentful = require('contentful-metalsmith')
-
+const watch = require('metalsmith-watch')
 const handlebars = require('handlebars')
 
 // add custom helpers to handlebars
@@ -25,17 +25,16 @@ glob.sync('helpers/*.js').forEach((fileName) => {
 Metalsmith(__dirname)
   .source('src')
   .destination('build')
+  .use(watch({
+      paths: {
+        "${source}/**/*": true,
+        "templates/**/*": "**/*.md",
+      },
+      livereload: true,
+  }))
   .use(contentful({
-    space_id: 'w7sdyslol3fu',
-    access_token: 'baa905fc9cbfab17b1bc0b556a7e17a3e783a2068c9fd6ccf74ba09331357182',
-    common: {
-      featured_author: {
-        limit: 1,
-        filter: {
-          'sys.id[in]': '5JQ715oDQW68k8EiEuKOk8'
-        }
-      }
-    },
+    space_id: 'fri9837iec6g',
+    access_token: 'efb97ebc999ec3b8be1bc8a12cc37cf360639981b90fd39ba9accf52a05ad09b'
   }))
   .use(layouts({
     engine: 'handlebars',

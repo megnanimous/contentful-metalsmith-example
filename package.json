@@ -34,6 +34,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "^1.2.0",
     "live-server": "^1.1.0",
+    "metalsmith-watch": "^1.0.3",
     "npm-run-all": "^3.0.0"
   },
   "config": {

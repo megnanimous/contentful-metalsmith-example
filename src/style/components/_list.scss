@@ -3,10 +3,17 @@
   margin: 0;
   padding: 0;
 
+  display: flex;
+  flex-wrap: wrap;
+
   > li {
     margin: 0;
     padding : 2em 0;
+    padding-right: 1.25em;
+    width: 50%;
   }
+
+
 }
 
 .c-list {

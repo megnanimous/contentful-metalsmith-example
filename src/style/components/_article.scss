@@ -6,6 +6,14 @@
     justify-content: flex-start;
   }
 
+  &__a {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+  }
+
   &__authorSumUp {
     margin: 2em 0;
     padding: 2em 0;
@@ -48,6 +56,13 @@
     }
   }
 
+  &__featured {
+
+    > img{
+      object-fit: cover;
+    }
+  }
+
   &__authorName {
     font-size: 1.25em;
   }
@@ -60,18 +75,19 @@
 
     margin-bottom: 1em;
 
-    svg {
-      fill: currentColor;
-      margin-right: .25em;
-    }
+    font-size: 0.75em;
+
   }
 
   &__header {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
   }
 
   &__headline {
     margin: .5em 0;
+    font-size: 1.25em;
+    font-family: 'Abril Fatface';
+    letter-spacing: 3px;
 
     > a {
       text-decoration: none;

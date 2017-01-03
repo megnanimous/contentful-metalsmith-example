@@ -20,19 +20,21 @@ body {
 }
 
 a {
+
   color: inherit;
 
   text-decoration: underline;
 
   &:hover {
-    color: $lightOrange;
+    color: #5a94ad;
   }
 
   &:active {
-    color: $orange;
+    color: #5a94ad;
   }
 }
 
-strong {
-  text-decoration: underline;
+
+p {
+  font-size: 0.9em;
 }
