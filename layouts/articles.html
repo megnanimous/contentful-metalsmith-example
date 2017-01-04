@@ -14,16 +14,21 @@
   <main class="l-container">
     {{> header}}
 
-  <div class="content"> 
+  <div class="feed-container">
+    <div id="instafeed">
+    </div>
 
-  <div id="instafeed">
+    <span><h2> Latest from Instagram </h2></span>
+
   </div>
+  
+  <div class="content">
 
     <ul class="c-paddedList">
       {{#each data.entries}}
         <li>
           <div class="c-article c-card u-marginBottomLarge">
-            <img src="{{ fields.featuredImage.fields.file.url }}?w=400">
+            <a href="{{ _fileName }}"><img src="{{ fields.featuredImage.fields.file.url }}?w=400"></a>
             {{> articleHeader fields _fileName=_fileName }}
 
                
