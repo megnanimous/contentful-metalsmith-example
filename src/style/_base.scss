@@ -7,6 +7,10 @@ body, html {
   color: #444;
 }
 
+strong {
+  color: #5a94ad;
+}
+
 * {
   &, &::before, &::after {
     box-sizing: border-box;
