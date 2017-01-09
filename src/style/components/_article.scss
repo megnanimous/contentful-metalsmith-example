@@ -6,6 +6,11 @@
     justify-content: flex-start;
   }
 
+  &__h3 {
+    font-family: 'Abril Fatface';
+    margin: 0;
+  }
+
   &__a {
     font-family: 'Open Sans';
     font-size: 1em;
@@ -117,3 +122,13 @@
   display: block;
   margin: auto;
 }
+
+.c-image-container {
+  max-height: 275px;
+  overflow: hidden;
+}
+
+
+
+
+

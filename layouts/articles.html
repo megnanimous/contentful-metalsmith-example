@@ -24,11 +24,17 @@
   
   <div class="content">
 
+  <span><h3 class="c-article__h3">Recent posts...</h3></span>
+
     <ul class="c-paddedList">
       {{#each data.entries}}
         <li>
           <div class="c-article c-card u-marginBottomLarge">
-            <a href="{{ _fileName }}"><img src="{{ fields.featuredImage.fields.file.url }}?w=400"></a>
+            
+            <div class="c-article c-card c-image-container">
+              <a href="{{ _fileName }}"><img src="{{ fields.featuredImage.fields.file.url }}?w=400"></a>
+            </div>
+            
             {{> articleHeader fields _fileName=_fileName }}
 
                
@@ -41,6 +47,9 @@
         </li>
       {{/each}}
     </ul>
+
+    <span><center><h3>To see more, select a category above!</h3></center></span>
+
   </div>
   </main>
   {{> footer}}
